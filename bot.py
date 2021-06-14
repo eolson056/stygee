@@ -139,4 +139,4 @@ async def on_message(message):
         await welcome_channel.send(embed=embedVar)
 
 
-client.run(env["DISCORD_TOKEN"])
+client.run("DISCORD_TOKEN")
