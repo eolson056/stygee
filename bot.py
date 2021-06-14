@@ -117,7 +117,7 @@ async def on_message(message):
     if any(word in message.content for word in sad_words):
         await message.channel.send(random.choice(encouragements))
 
-    # ************ list out help commands, then removes post
+    # ************ list out help commands, then removes post -
     if message.content.startswith('$help'):
         await message.delete()  # removes message
         botmsg = await message.channel.send('These are available commands:\n' +
