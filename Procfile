@@ -1,1 +1,1 @@
-worker: python stygee.py
+worker: python bot.py
