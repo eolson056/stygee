@@ -19,6 +19,7 @@ from discord import Client
 from dotenv import load_dotenv
 import os
 
+os.eviron()
 load_dotenv()
 
 intents = discord.Intents.default()
