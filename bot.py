@@ -139,4 +139,4 @@ async def on_message(message):
         await welcome_channel.send(embed=embedVar)
 
 
-client.run("ODQ2NDUzOTQ1OTkxNDMwMTQ0.YKvvqw.MhwuCXUh8IQ7ZZGRNauaMQxC5DE")
+client.run()
