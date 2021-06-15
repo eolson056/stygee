@@ -5,6 +5,8 @@ import requests
 import json
 import random
 import asyncio
+
+from discord import Client
 from dotenv import load_dotenv
 import os
 
@@ -12,9 +14,9 @@ load_dotenv()
 
 intents = discord.Intents.default()
 intents.members = True
-
 client = discord.Client(intents=intents)
 
+DISCORD_TOKEN = 'ODQ2NDUzOTQ1OTkxNDMwMTQ0.YKvvqw.PKET1x8eiGKoNSJY8UYPjL1_zXI'
 sysmsg_channel = client.get_channel(843676544316735528)
 welcome_channel = client.get_channel(845398906577879060)
 
@@ -138,5 +140,4 @@ async def on_message(message):
 
         await welcome_channel.send(embed=embedVar)
 
-
-client.run()
+client.run(DISCORD_TOKEN)
