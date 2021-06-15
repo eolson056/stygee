@@ -27,7 +27,6 @@ client = discord.Client(intents=intents)
 
 sysmsg_channel = client.get_channel(843676544316735528)
 welcome_channel = client.get_channel(845398906577879060)
-DISCORD_TOKEN = {{ secret.GIT_TOKEN }}
 
 def get_quote():
     response = requests.get("https://zenquotes.io/api/random")
