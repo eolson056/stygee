@@ -6,6 +6,7 @@ import json
 import random
 import asyncio
 
+from discord.ext import commands
 from discord import Client
 from dotenv import load_dotenv  #! python
 
