@@ -7,7 +7,7 @@ import random
 import asyncio
 
 from discord import Client
-from dotenv import load_dotenv#! python
+from dotenv import load_dotenv  #! python
 
 import discord
 import requests
@@ -19,7 +19,6 @@ from discord import Client
 from dotenv import load_dotenv
 import os
 
-os.eviron()
 load_dotenv()
 
 intents = discord.Intents.default()
