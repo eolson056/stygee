@@ -8,8 +8,8 @@ import asyncio
 import os
 
 from discord import Client
-# from dotenv import load_dotenv
-# load_dotenv()
+from dotenv import load_dotenv
+load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
 intents = discord.Intents.default()
