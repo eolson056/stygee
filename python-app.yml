@@ -35,5 +35,8 @@ jobs:
       run: |
         pytest
     - name: dscord bot
+      run: python -c 'import os;print(os.environ)'
       env:
         DISCORD_TOKEN: ${{secrets.DISCORD_TOKEN}}
+    - name: Test inline env vars for python
+      run: DISCORD_TOKEN=${{ secrets.DISCORD_TOKEN }}
