@@ -7,10 +7,12 @@ import random
 import asyncio
 import os
 
-from discord import Client
+# from discord import Client
 from dotenv import load_dotenv
+
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
+# TOKEN = ""
 
 intents = discord.Intents.default()
 intents.members = True
@@ -136,4 +138,4 @@ async def on_message(message):
 
         await welcome_channel.send(embed=embedVar)
 
-client.run('ODQ2NDUzOTQ1OTkxNDMwMTQ0.YKvvqw.VOe8LjGUN-podBuzQijhxXdNjX4')
+client.run(TOKEN)
