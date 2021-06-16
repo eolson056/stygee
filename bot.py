@@ -21,6 +21,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
+TOKEN = os.getenv('DISCORD_TOKEN')
 
 intents = discord.Intents.default()
 intents.members = True
@@ -280,4 +281,4 @@ async def on_message(message):
 
         await welcome_channel.send(embed=embedVar)
 
-client.run(DISCORD_TOKEN)
+client.run(TOKEN)
