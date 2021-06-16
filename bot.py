@@ -11,8 +11,8 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
-# TOKEN = ""
+# TOKEN = os.getenv('DISCORD_TOKEN')
+TOKEN = "ODQ2NDUzOTQ1OTkxNDMwMTQ0.YKvvqw.ezJ-LTf6UkqeU5pbmfTuv_2-AYI"
 
 intents = discord.Intents.default()
 intents.members = True
